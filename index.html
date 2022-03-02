@@ -10,6 +10,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Boda Pau&Rafa</title>
   </head>
@@ -36,7 +42,7 @@
           role="tab"
           aria-controls="profile"
           aria-selected="false"
-          >Profile</a
+          >Hospedaje</a
         >
       </li>
       <li class="nav-item">
@@ -48,7 +54,19 @@
           role="tab"
           aria-controls="contact"
           aria-selected="false"
-          >Contact</a
+          >RSVP</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="contact-tab"
+          data-toggle="tab"
+          href="#contact"
+          role="tab"
+          aria-controls="contact"
+          aria-selected="false"
+          >RSVP</a
         >
       </li>
     </ul>
@@ -65,14 +83,28 @@
             src="pau-rafa-02.svg"
             alt="Boda Pau y Rafa"
           />
-          <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-              <p>
+          <div class="row content">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <p class="intro">
                 ACOMPÁÑANOS A CELEBRAR EL DÍA MÁS IMPORTANTE DE NUESTRAS VIDAS.
               </p>
+              <br />
+              <h1 class="mt-2 mb-4">MAYO 6 2022</h1>
+              <p class="main-title">MISA - 13:30</p>
+              <p class="info">
+                IGLESIA DE LA INMACULADA CONCEPCIÓN Jose María Morelos 12,
+                Barrio de la Sierra, 42120 Mineral del Chico, Hgo.
+              </p>
+              <p class="main-title mt-3">RECEPCIÓN</p>
+              <p class="info mb-4">
+                HOTEL PARAÍSO (JARDÍN PRINCIPAL) <br />Km 19 Carretera Pachuca,
+                Centro, 42120 Mineral del Chico, Hgo
+              </p>
+
+              <p class="main-title">TRAJE SEMI-FORMAL</p>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-2"></div>
           </div>
         </div>
       </div>
@@ -83,6 +115,14 @@
         aria-labelledby="profile-tab"
       >
         Holaaaaa
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+      >
+        ...
       </div>
       <div
         class="tab-pane fade"

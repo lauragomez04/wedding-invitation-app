@@ -1,8 +1,32 @@
+:root {
+  --text-color: #6b6a6a;
+  --titles-color: #474445;
+}
+
+body {
+  font-family: "Baskervville", serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--titles-color);
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+
+.nav-link {
+  color: #557a44;
+}
+
+.nav-link:hover {
+  color: #afc989;
+}
+
 .container {
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   background-image: url(fondo-01.svg);
   margin: 0 auto;
-
   width: 480px;
   height: 600px;
 }
@@ -18,4 +42,20 @@
   position: relative;
   transform: scale(0.4, 0.4);
   bottom: 70px;
+}
+
+.content {
+  position: relative;
+  bottom: 170px;
+}
+
+.intro,
+.info {
+  color: var(--text-color);
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 12px;
 }
