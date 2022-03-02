@@ -17,120 +17,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Boda Pau&Rafa</title>
   </head>
   <body>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          id="home-tab"
-          data-toggle="tab"
-          href="#home"
-          role="tab"
-          aria-controls="home"
-          aria-selected="true"
-          >Pau&Rafa</a
+    <div>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Pau&Rafa
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Hospedaje
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
         >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="profile-tab"
-          data-toggle="tab"
-          href="#profile"
-          role="tab"
-          aria-controls="profile"
-          aria-selected="false"
-          >Hospedaje</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="contact-tab"
-          data-toggle="tab"
-          href="#contact"
-          role="tab"
-          aria-controls="contact"
-          aria-selected="false"
-          >RSVP</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="contact-tab"
-          data-toggle="tab"
-          href="#contact"
-          role="tab"
-          aria-controls="contact"
-          aria-selected="false"
-          >RSVP</a
-        >
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div
-        class="tab-pane fade show active"
-        id="home"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-      >
-        <div class="container">
-          <img
-            class="image-fluid pau-rafa"
-            src="pau-rafa-02.svg"
-            alt="Boda Pau y Rafa"
-          />
-          <div class="row content">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <p class="intro">
-                ACOMPÁÑANOS A CELEBRAR EL DÍA MÁS IMPORTANTE DE NUESTRAS VIDAS.
-              </p>
-              <br />
-              <h1 class="mt-2 mb-4">MAYO 6 2022</h1>
-              <p class="main-title">MISA - 13:30</p>
-              <p class="info">
-                IGLESIA DE LA INMACULADA CONCEPCIÓN Jose María Morelos 12,
-                Barrio de la Sierra, 42120 Mineral del Chico, Hgo.
-              </p>
-              <p class="main-title mt-3">RECEPCIÓN</p>
-              <p class="info mb-4">
-                HOTEL PARAÍSO (JARDÍN PRINCIPAL) <br />Km 19 Carretera Pachuca,
-                Centro, 42120 Mineral del Chico, Hgo
-              </p>
+          <div class="container">
+            <img
+              class="image-fluid pau-rafa"
+              src="pau-rafa-02.svg"
+              alt="Boda Pau y Rafa"
+            />
+            <div class="row content">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <p class="intro">
+                  ACOMPÁÑANOS A CELEBRAR EL DÍA MÁS IMPORTANTE DE NUESTRAS
+                  VIDAS.
+                </p>
+                <br />
+                <h1 class="mt-2 mb-4">MAYO 6 2022</h1>
+                <p class="main-title">MISA - 13:30</p>
+                <p class="info">
+                  IGLESIA DE LA INMACULADA CONCEPCIÓN Jose María Morelos 12,
+                  Barrio de la Sierra, 42120 Mineral del Chico, Hgo.
+                </p>
+                <p class="main-title mt-3">RECEPCIÓN</p>
+                <p class="info mb-4">
+                  HOTEL PARAÍSO (JARDÍN PRINCIPAL) <br />Km 19 Carretera
+                  Pachuca, Centro, 42120 Mineral del Chico, Hgo
+                </p>
 
-              <p class="main-title">TRAJE SEMI-FORMAL</p>
+                <p class="main-title">TRAJE SEMI-FORMAL</p>
+              </div>
+              <div class="col-sm-2"></div>
             </div>
-            <div class="col-sm-2"></div>
           </div>
         </div>
-      </div>
-      <div
-        class="tab-pane fade"
-        id="profile"
-        role="tabpanel"
-        aria-labelledby="profile-tab"
-      >
-        Holaaaaa
-      </div>
-      <div
-        class="tab-pane fade"
-        id="contact"
-        role="tabpanel"
-        aria-labelledby="contact-tab"
-      >
-        ...
-      </div>
-      <div
-        class="tab-pane fade"
-        id="contact"
-        role="tabpanel"
-        aria-labelledby="contact-tab"
-      >
-        ...
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <div class="container hospedaje">
+            <div class="row">
+              <div class="col hospedaje-info">
+                <h2 class="main-title mt-4">HOSPEDAJE EN HOTEL PARAÍSO</h2>
+                <p class="info">
+                  Si deseas hospedarte en el hotel del evento, se puede reservar
+                  a través de los novios con una tarifa más cómoda que la
+                  disponible en las plataformas para reservaciones hoteleras en
+                  línea.
+
+                  Existen 2 tipos de habitación en el Hotel Paraíso:
+                  <ul>
+                      <li class="info">Habitación doble con dos camas matrimoniales</li>
+                      <li class="info">Habitación doble con una cama King</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
