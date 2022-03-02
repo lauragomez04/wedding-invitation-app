@@ -2,7 +2,20 @@
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   background-image: url(fondo-01.svg);
   margin: 0 auto;
-  margin-top: 50px;
+
   width: 480px;
   height: 600px;
+}
+
+.nav {
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 480px;
+}
+
+.pau-rafa {
+  margin: 0 auto;
+  position: relative;
+  transform: scale(0.4, 0.4);
+  bottom: 70px;
 }
