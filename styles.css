@@ -1,0 +1,8 @@
+.container {
+  box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
+  background-image: url(fondo-01.svg);
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 480px;
+  height: 600px;
+}
