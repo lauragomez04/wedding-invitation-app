@@ -95,3 +95,9 @@ h1 {
     height: 570px;
   }
 }
+
+@media (max-width: 280px) {
+  .content {
+    margin-top: 55px;
+  }
+}
