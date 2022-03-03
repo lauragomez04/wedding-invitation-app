@@ -47,13 +47,13 @@ h1 {
   margin: 0 auto;
   position: relative;
   transform: scale(0.35, 0.35);
-  bottom: 70px;
+  bottom: 90px;
   width: 100% \9;
 }
 
 .content {
   position: relative;
-  bottom: 195px;
+  bottom: 200px;
   margin-left: 35px;
   margin-right: 35px;
 }
