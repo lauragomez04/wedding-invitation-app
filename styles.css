@@ -24,15 +24,11 @@ h1 {
 }
 
 .container {
-  box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   background-image: url(fondo-01.svg);
+  box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   margin: 0 auto;
   width: 480px;
   height: 600px;
-}
-
-.hospedaje {
-  background-image: url(fondo2-03.svg);
 }
 
 .hospedaje-info {
@@ -51,13 +47,14 @@ h1 {
 .pau-rafa {
   margin: 0 auto;
   position: relative;
-  transform: scale(0.4, 0.4);
+  transform: scale(0.35, 0.35);
   bottom: 70px;
+  width: 100% \9;
 }
 
 .content {
   position: relative;
-  bottom: 170px;
+  bottom: 195px;
 }
 
 .intro,
