@@ -77,7 +77,7 @@ h1 {
   font-size: 8px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 540px) {
   .content {
     margin-top: 30px;
     margin-left: 15px;
@@ -90,9 +90,8 @@ h1 {
   }
 
   .container {
-    background-size: 420px 600px;
     background-position: center;
-    height: 570px;
+    max-width: 100%;
   }
 }
 
