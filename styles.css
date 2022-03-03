@@ -80,4 +80,5 @@ h1 {
   right: 12px;
   width: 480px;
   height: 600px;
+  max-width: 100%;
 }
