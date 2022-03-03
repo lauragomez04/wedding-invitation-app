@@ -23,9 +23,10 @@ h1 {
   color: #afc989;
 }
 
-.container-fluid {
+.container {
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   margin: 0 auto;
+  max-width: 100%;
   width: 480px;
   height: 600px;
 }
