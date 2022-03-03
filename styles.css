@@ -25,6 +25,8 @@ h1 {
 
 .container {
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
+  background-image: url(fondo-01.png);
+  background-size: 480px 600px;
   margin: 0 auto;
   max-width: 100%;
   width: 480px;
@@ -48,13 +50,13 @@ h1 {
   margin: 0 auto;
   position: relative;
   transform: scale(0.35, 0.35);
-  bottom: 700px;
+  bottom: 100px;
   width: 100% \9;
 }
 
 .content {
   position: relative;
-  bottom: 820px;
+  bottom: 220px;
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -75,10 +77,19 @@ h1 {
   font-size: 8px;
 }
 
-.bgrd-image {
-  position: relative;
-  right: 12px;
-  width: 480px;
-  height: 600px;
-  max-width: 100%;
+@media (max-width: 767px) {
+  .content {
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .pau-rafa {
+    margin-top: 30px;
+  }
+
+  .container {
+    background-size: 420px 667px;
+    background-position: center;
+  }
 }
