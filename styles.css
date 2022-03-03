@@ -25,7 +25,6 @@ h1 {
 
 .container {
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
-  background-image: url(fondo-01.svg);
   margin: 0 auto;
   max-width: 100%;
   width: 480px;
@@ -49,13 +48,13 @@ h1 {
   margin: 0 auto;
   position: relative;
   transform: scale(0.35, 0.35);
-  bottom: 90px;
+  bottom: 700px;
   width: 100% \9;
 }
 
 .content {
   position: relative;
-  bottom: 200px;
+  bottom: 820px;
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -74,4 +73,11 @@ h1 {
 
 .chart {
   font-size: 8px;
+}
+
+.bgrd-image {
+  position: relative;
+  right: 12px;
+  width: 480px;
+  height: 600px;
 }
