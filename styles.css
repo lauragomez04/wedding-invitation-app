@@ -60,6 +60,20 @@ a:hover {
   color: var(--links-hover-color);
 }
 
+.btn-primary {
+  background-color: white;
+  border-color: var(--links-color);
+  color: var(--links-color);
+  font-size: 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--links-hover-color);
+  border-color: var(--links-hover-color);
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
 .container {
   box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
   margin: 0 auto;
@@ -75,7 +89,8 @@ a:hover {
 
 .hospedaje-info,
 .transporte-info,
-.ubicacion-info {
+.ubicacion-info,
+.regalos-info {
   margin: 0 auto;
   margin-top: 20px;
   margin-left: 35px;
@@ -85,7 +100,8 @@ a:hover {
 
 .hospedaje,
 .transporte,
-.ubicacion {
+.ubicacion,
+.regalos {
   background-image: url(fondo2-03.png);
   background-size: 480px 600px;
 }
