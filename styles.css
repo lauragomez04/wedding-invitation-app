@@ -33,6 +33,7 @@ th {
 em {
   color: var(--links-color);
   display: block;
+  font-size: 10px;
   margin: 0 auto;
   text-align: center;
 }
@@ -45,7 +46,7 @@ li {
 a {
   color: var(--links-color);
   font-size: 10px;
-  text-decoration: none;
+  text-underline-offset: 2px;
 }
 
 a:hover {
@@ -58,20 +59,6 @@ a:hover {
 
 .nav-link:hover {
   color: var(--links-hover-color);
-}
-
-.btn-primary {
-  background-color: white;
-  border-color: var(--links-color);
-  color: var(--links-color);
-  font-size: 10px;
-}
-
-.btn-primary:hover {
-  background-color: var(--links-hover-color);
-  border-color: var(--links-hover-color);
-  color: white;
-  transition: all 200ms ease-in-out;
 }
 
 .container {
