@@ -37,6 +37,21 @@ em {
   text-align: center;
 }
 
+li {
+  color: var(--links-color);
+  font-size: 10px;
+}
+
+a {
+  color: var(--links-color);
+  font-size: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--links-hover-color);
+}
+
 .nav-link {
   color: var(--links-color);
 }
@@ -59,7 +74,8 @@ em {
 }
 
 .hospedaje-info,
-.transporte-info {
+.transporte-info,
+.ubicacion-info {
   margin: 0 auto;
   margin-top: 20px;
   margin-left: 35px;
@@ -68,7 +84,8 @@ em {
 }
 
 .hospedaje,
-.transporte {
+.transporte,
+.ubicacion {
   background-image: url(fondo2-03.png);
   background-size: 480px 600px;
 }
@@ -119,7 +136,8 @@ em {
   }
 
   .hospedaje-info,
-  .transporte-info {
+  .transporte-info,
+  .ubicacion-info {
     margin-top: 10px;
   }
 
@@ -153,7 +171,8 @@ em {
   }
 
   .hospedaje-info,
-  .transporte-info {
+  .transporte-info,
+  .ubicacion-info {
     font-size: 6px;
     margin-left: 5px;
     margin-right: 5px;
@@ -168,7 +187,8 @@ em {
 
 @media (max-width: 380px) {
   .hospedaje-info,
-  .transporte-info {
+  .transporte-info,
+  .ubicacion-info {
     margin-left: 13px;
     margin-right: 13px;
   }
