@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,6 +61,30 @@
             aria-selected="false"
           >
             Transporte
+          </button>
+          <button
+            class="nav-link"
+            id="nav-ubicación-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-ubicacion"
+            type="button"
+            role="tab"
+            aria-controls="nav-ubicacion"
+            aria-selected="false"
+          >
+            <i class="bi bi-geo-alt-fill"></i>
+          </button>
+          <button
+            class="nav-link"
+            id="nav-ubicación-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-ubicacion"
+            type="button"
+            role="tab"
+            aria-controls="nav-ubicacion"
+            aria-selected="false"
+          >
+            <i class="bi bi-gift-fill"></i>
           </button>
         </div>
       </nav>
@@ -129,57 +154,96 @@
                   </ul>
                 </p>
                 <p class="info mb-3">Los precios en MXN que maneja el hotel, para el evento (impuestos incluidos), son:</p>
-                
-
                 <table class="table table-sm">
-<thead>
-    <tr>
-      <th scope="col">CONCEPTO</th>
-      <th scope="col" class="text-center">VIERNES</th>
-      <th scope="col" class="text-center">SÁBADO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Hab. dos personas (dos camas)</th>
-      <td class="text-center">1.770</td>
-      <td class="text-center">1.990</td>
-      
-    </tr>
-    <tr>
-      <th scope="row">Hab. dos personas (cama king)</th>
-      <td class="text-center">2.025</td>
-      <td class="text-center">2.250</td>
-      
-    </tr>
-    <tr>
-      <th scope="row">Costo por persona adicional</th>
-      <td class="text-center">550</td>
-      <td class="text-center">550</td>
-
-    </tr>
-    <tr>
-      <th scope="row">Costo de niño (3-10 años)</th>
-      <td class="text-center">90</td>
-      <td class="text-center">90</td>
-      
-    </tr>
-  </tbody>
-</table>
-<p class="nota mt-2">* Tipo de cambio de referencia: 1MXN = 200 COP NOTA: Las habitaciones estarán disponibles desde las 11 am (early check-in).</p>
-<p class="info mb-2">Para reservar una habitación con estas condiciones, debes comunicarlo y liquidarlo directamente a Pau o Rafa en las siguientes cuentas bancarias:  
-</p>
-<div class="row mt-3">
-    <div class="col info">
-        <p>Banco Santander<br/>CLABE 014180606181996440<br/>Javier Rafael Garayoa Guajardo</p>
-    </div>
-    <div class="col info">Banco Davivienda<br/>Cuenta Ahorros No. 003800157186<br/>Paula Andrea Gómez Blanco</div>
-    
-</div>
+                    <thead>
+                        <tr>
+                            <th scope="col">CONCEPTO</th>
+                            <th scope="col">VIERNES</th>
+                            <th scope="col">SÁBADO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Hab. dos personas (dos camas)</th>
+                            <td>1.770</td>
+                            <td>1.990</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hab. dos personas (cama king)</th>
+                            <td>2.025</td>
+                            <td>2.250</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Costo por persona adicional</th>
+                            <td>550</td>
+                            <td>550</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Costo de niño (3-10 años)</th>
+                            <td>90</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="nota mt-2">* Tipo de cambio de referencia: 1MXN = 200 COP <br/>NOTA: Las habitaciones estarán disponibles desde las 11am (early check-in).</p>
+                <p class="info mb-2">Para reservar una habitación con estas condiciones, debes comunicarlo y liquidarlo directamente a Pau o Rafa en las siguientes cuentas bancarias:  </p>
+                <div class="row mt-3">
+                    <div class="col info">
+                        <p>Banco Santander<br/>CLABE 014180606181996440<br/>Javier Rafael Garayoa Guajardo</p>
+                    </div>
+                    <div class="col info">Banco Davivienda<br/>Cuenta Ahorros No. 003800157186<br/>Paula Andrea Gómez Blanco</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div
+          class="tab-pane fade"
+          id="nav-transporte"
+          role="tabpanel"
+          aria-labelledby="nav-transporte-tab"
+        >
+        <div class="container transporte">
+            <div class="row">
+                <div class="col transporte-info">
+                    <h2 class="main-title mt-3">TRANSPORTE</h2>
+                    <p class="info mt-2">
+                        El tiempo de traslado a Mineral del Chico ronda las 3 horas desde la Ciudad de Mexico. Si deseas compartir tu transporte o necesitas un “ride”, por favor coméntalo con Pau y/o Rafa.
+                        <br/><br/>Para comodidad de todos los asistentes, habrá disponibilidad de dos camionetas para los traslados dentro del mismo pueblo (ej. Hotel a la iglesia, Hotel al desayuno, Hotel a las actividades eco-turísticas), estas camionetas estarán disponibles la mayor parte del día. <br/><br/>El pueblo cuenta con una oferta limitada de lugares de estacionamiento, por lo que, si deseas llegar directamente en tu automóvil, favor de considerar que el estacionamiento puede llegar a ser algo complicado cerca de la iglesia. <br/><br/>En las inmediaciones del pueblo no encontrarás gasolineras, por lo que es importante considerar combustible suficiente para tu regreso.
+                        <br/><br/>
+                        <em>Y "paquetequedes" todo el fin...</em>
+                        <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">DIA</th>
+                            <th scope="col">EVENTO</th>
+                            <th scope="col">UBICACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Viernes</th>
+                            <td>Misa <br/> Recepción</td>
+                            <td>1.990</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sábado</th>
+                            <td>Desayuno con barbacoa Hidalguense artesanal de horno en la Cabaña Casa Rústica Río del Milagro</td>
+                            <td>2.250</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domingo</th>
+                            <td>Celebración sorpresa por el día de las madres</td>
+                            <td>550</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
       </div>
     </div>
 
