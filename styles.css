@@ -1,6 +1,8 @@
 :root {
   --text-color: #6b6a6a;
   --titles-color: #474445;
+  --links-color: #557a44;
+  --links-hover-color: #afc989;
 }
 
 body {
@@ -28,12 +30,19 @@ th {
   color: var(--titles-color);
 }
 
+em {
+  color: var(--links-color);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .nav-link {
-  color: #557a44;
+  color: var(--links-color);
 }
 
 .nav-link:hover {
-  color: #afc989;
+  color: var(--links-hover-color);
 }
 
 .container {
@@ -52,12 +61,14 @@ th {
 .hospedaje-info,
 .transporte-info {
   margin: 0 auto;
+  margin-top: 20px;
   margin-left: 35px;
   margin-right: 35px;
   text-align: left;
 }
 
-.hospedaje {
+.hospedaje,
+.transporte {
   background-image: url(fondo2-03.png);
   background-size: 480px 600px;
 }
@@ -96,6 +107,7 @@ th {
 }
 
 .nota {
+  color: var(--text-color);
   font-size: 8px;
 }
 
@@ -104,6 +116,11 @@ th {
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  .hospedaje-info,
+  .transporte-info {
+    margin-top: 10px;
   }
 
   .pau-rafa {
@@ -122,12 +139,37 @@ th {
 }
 
 @media (max-width: 280px) {
-  .content {
-    margin-top: 55px;
-  }
-
   .nav-link {
     font-size: 13px;
     padding: 6px;
+  }
+
+  .pau-rafa {
+    margin-top: 40px;
+  }
+
+  .content {
+    margin-top: 70px;
+  }
+
+  .hospedaje-info,
+  .transporte-info {
+    font-size: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -10px;
+    line-height: 11px;
+  }
+
+  .main-title {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hospedaje-info,
+  .transporte-info {
+    margin-left: 13px;
+    margin-right: 13px;
   }
 }
