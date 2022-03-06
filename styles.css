@@ -38,6 +38,11 @@ em {
   text-align: center;
 }
 
+.paquetequedes {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
 li {
   color: var(--links-color);
   font-size: 10px;
@@ -76,8 +81,9 @@ a:hover {
 
 .hospedaje-info,
 .transporte-info,
-.ubicacion-info,
-.regalos-info {
+.covid-info,
+.regalos-info,
+.actividades-info {
   margin: 0 auto;
   margin-top: 20px;
   margin-left: 35px;
@@ -87,8 +93,9 @@ a:hover {
 
 .hospedaje,
 .transporte,
-.ubicacion,
-.regalos {
+.covid,
+.regalos,
+.actividades {
   background-image: url(fondo2-03.png);
   background-size: 480px 600px;
 }
@@ -140,7 +147,7 @@ a:hover {
 
   .hospedaje-info,
   .transporte-info,
-  .ubicacion-info {
+  .covid-info {
     margin-top: 10px;
   }
 
@@ -175,7 +182,7 @@ a:hover {
 
   .hospedaje-info,
   .transporte-info,
-  .ubicacion-info,
+  .covid-info,
   .regalos-info {
     font-size: 6px;
     margin-left: 5px;
@@ -192,7 +199,7 @@ a:hover {
 @media (max-width: 380px) {
   .hospedaje-info,
   .transporte-info,
-  .ubicacion-info {
+  .covid-info {
     margin-left: 13px;
     margin-right: 13px;
   }
