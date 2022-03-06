@@ -10,16 +10,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/c564356a8c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
 
     <title>Boda Pau&Rafa</title>
@@ -29,7 +29,7 @@
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button
-            class="nav-link active"
+            class="nav-link active px-3"
             id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
@@ -38,10 +38,10 @@
             aria-controls="nav-home"
             aria-selected="true"
           >
-            Pau&Rafa
+            <i class="fa-solid fa-envelope-open-text"></i>
           </button>
           <button
-            class="nav-link"
+            class="nav-link px-3"
             id="nav-profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-profile"
@@ -50,10 +50,10 @@
             aria-controls="nav-profile"
             aria-selected="false"
           >
-            Hospedaje
+            <i class="fa-solid fa-bed"></i>
           </button>
           <button
-            class="nav-link"
+            class="nav-link px-4"
             id="nav-transporte-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-transporte"
@@ -62,10 +62,22 @@
             aria-controls="nav-transporte"
             aria-selected="false"
           >
-            Transporte
+            <i class="fa-solid fa-bus-simple"></i>
           </button>
           <button
-            class="nav-link"
+            class="nav-link px-4"
+            id="nav-actividades-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-actividades"
+            type="button"
+            role="tab"
+            aria-controls="nav-actividades"
+            aria-selected="false"
+          >
+            <i class="fa-solid fa-person-hiking"></i>
+          </button>
+          <button
+            class="nav-link px-4"
             id="nav-ubicacion-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-ubicacion"
@@ -74,10 +86,10 @@
             aria-controls="nav-ubicacion"
             aria-selected="false"
           >
-            <i class="bi bi-geo-alt"></i>
+            <i class="fa-solid fa-location-dot"></i>
           </button>
           <button
-            class="nav-link"
+            class="nav-link px-4"
             id="nav-regalos-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-regalos"
@@ -86,7 +98,7 @@
             aria-controls="nav-regalos"
             aria-selected="false"
           >
-            <i class="bi bi-gift"></i>
+            <i class="fa-solid fa-gift"></i>
           </button>
         </div>
       </nav>
