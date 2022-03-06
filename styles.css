@@ -147,6 +147,7 @@ a:hover {
 
   .hospedaje-info,
   .transporte-info,
+  .actividades-info,
   .covid-info {
     margin-top: 10px;
   }
@@ -168,8 +169,7 @@ a:hover {
 
 @media (max-width: 280px) {
   .nav-link {
-    font-size: 13px;
-    padding: 6px;
+    font-size: 12px;
   }
 
   .pau-rafa {
@@ -182,7 +182,7 @@ a:hover {
 
   .hospedaje-info,
   .transporte-info,
-  .covid-info,
+  .actividades-info .covid-info,
   .regalos-info {
     font-size: 6px;
     margin-left: 5px;
@@ -199,7 +199,7 @@ a:hover {
 @media (max-width: 380px) {
   .hospedaje-info,
   .transporte-info,
-  .covid-info {
+  .actividades-info .covid-info {
     margin-left: 13px;
     margin-right: 13px;
   }
