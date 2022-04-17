@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 :root {
   --text-color: #6b6a6a;
   --titles-color: #474445;
@@ -7,7 +9,7 @@
 
 body {
   font-family: "Baskervville", serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -38,16 +40,50 @@ em {
   text-align: center;
 }
 
-.paquetequedes {
-  font-size: 12px;
-  margin-top: 25px;
-  text-align: left;
+.container {
+  box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 480px;
+  height: 600px;
 }
 
-li {
-  color: var(--links-color);
-  font-size: 10px;
+.content {
+  position: relative;
+  bottom: 225px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
+
+.intro,
+.info {
+  color: var(--text-color);
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+.invite {
+  background-image: url(fondo-01.png);
+  background-size: 480px 600px;
+}
+
+.main-title {
+  color: var(--titles-color);
+  font-size: 12px;
+}
+
+.nav {
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 480px;
+}
+
+.nota {
+  color: var(--text-color);
+  font-size: 8px;
+}
+
+/* LINKS */
 
 a {
   color: var(--links-color);
@@ -67,18 +103,17 @@ a:hover {
   color: var(--links-hover-color);
 }
 
-.container {
-  box-shadow: rgba(37, 39, 39, 0.1) 0px 8px 8px 0px;
+/* INVITE */
+
+.pau-rafa {
   margin: 0 auto;
-  max-width: 100%;
-  width: 480px;
-  height: 600px;
+  position: relative;
+  transform: scale(0.35, 0.35);
+  bottom: 100px;
+  width: 100% \9;
 }
 
-.invite {
-  background-image: url(fondo-01.png);
-  background-size: 480px 600px;
-}
+/* TRANSPORTE, ACTIVIDADES, HOSPEDAJE, COVID, REGALOS */
 
 .hospedaje-info,
 .transporte-info,
@@ -101,42 +136,40 @@ a:hover {
   background-size: 480px 600px;
 }
 
-.nav {
-  margin: 0 auto;
-  margin-top: 10px;
-  max-width: 480px;
-}
+/* UBICACIONES */
 
-.pau-rafa {
-  margin: 0 auto;
-  position: relative;
-  transform: scale(0.35, 0.35);
-  bottom: 100px;
-  width: 100% \9;
-}
-
-.content {
-  position: relative;
-  bottom: 225px;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.intro,
-.info {
-  color: var(--text-color);
+li {
+  color: var(--links-color);
   font-size: 10px;
-  margin: 0 auto;
 }
 
-.main-title {
-  color: var(--titles-color);
+.paquetequedes {
   font-size: 12px;
+  margin-top: 25px;
+  text-align: left;
 }
 
-.nota {
-  color: var(--text-color);
-  font-size: 8px;
+/* TRANSPORTE */
+
+.timeline {
+  position: relative;
+  left: 23px;
+  top: 20px;
+}
+
+.timeline::before {
+  content: "";
+  background: var(--links-color);
+  height: 245px;
+  width: 1px;
+  position: absolute;
+}
+
+.event {
+  padding: 8px;
+}
+.hora {
+  font-size: 14px;
 }
 
 @media (max-width: 540px) {
@@ -166,6 +199,19 @@ a:hover {
   .nav-link {
     padding: 9px;
   }
+
+  .timeline::before {
+    height: 248px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hospedaje-info,
+  .transporte-info,
+  .actividades-info .covid-info {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
 }
 
 @media (max-width: 280px) {
@@ -183,25 +229,25 @@ a:hover {
 
   .hospedaje-info,
   .transporte-info,
-  .actividades-info .covid-info,
+  .actividades-info,
+  .covid-info,
   .regalos-info {
     font-size: 6px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: -10px;
+    line-height: 13px;
+  }
+
+  .hospedaje-info {
     line-height: 11px;
   }
 
   .main-title {
     font-size: 8px;
   }
-}
 
-@media (max-width: 380px) {
-  .hospedaje-info,
-  .transporte-info,
-  .actividades-info .covid-info {
-    margin-left: 13px;
-    margin-right: 13px;
+  .timeline::before {
+    height: 250px;
   }
 }
